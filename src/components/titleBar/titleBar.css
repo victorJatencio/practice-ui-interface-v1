@@ -1,0 +1,9 @@
+.titleBar {
+  width: auto;
+  max-width: 300px;
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 0.5em 1.5em;
+  line-height: 0.2;
+}

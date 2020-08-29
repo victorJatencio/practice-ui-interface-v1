@@ -1,0 +1,42 @@
+:root {
+  --grey: #eeeeee;
+  --blue: #1b48f2;
+  --black: #1b1b1b;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  letter-spacing: 0.3px;
+}
+
+/* -------- Index --------- 
+// Global Styles
+-------------------------*/
+.bkg__primary {
+  background-color: var(--blue);
+}
+.primary {
+  color: var(--blue);
+}
