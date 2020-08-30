@@ -1,21 +1,21 @@
 .intro__container {
   display: grid;
-  grid-template-columns: 85px auto;
+  grid-template-columns: 85px 85px auto;
   grid-template-rows: 15% 1fr 1fr auto;
 }
 
 .item__avatar {
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-row-start: 2;
 }
 .item__text {
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-row-start: 3;
   max-width: 65%;
   margin-top: 55px;
 }
 .item__bar {
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-row-start: 4;
   margin-top: 55px;
 }

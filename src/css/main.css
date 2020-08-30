@@ -2,6 +2,7 @@
   --grey: #eeeeee;
   --blue: #1b48f2;
   --black: #1b1b1b;
+  --shadow: rgba(0, 0, 0, 0.3);
 }
 
 html,
@@ -39,4 +40,9 @@ h1 {
 }
 .primary {
   color: var(--blue);
+}
+
+/* Side Menu Links Styles */
+.App.container {
+  display: flex;
 }

@@ -9,7 +9,7 @@ const Intro = () => {
   return (
     <div className="intro__container">
       <div className="item__avatar">
-        <CircledAvatar withShadow="withShadow" />
+        <CircledAvatar withShadow="withShadow" xs="xs" />
       </div>
       <h1 className="item__text">
         A peep at some distant orb has power to raise and purify our thoughts

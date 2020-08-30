@@ -1,0 +1,86 @@
+.sidebarNavigationOverlay {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--blue);
+  height: 100vh;
+  box-shadow: 2px 0 8px var(--shadow);
+}
+.sidebarNavigationOverlay .menu-wrapper {
+  display: block;
+  height: 100vh;
+}
+.sidebarNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 220px;
+  height: 90%;
+  padding: 1em;
+  margin-left: 5em;
+}
+.sidebarNavigation .sidebar-top .links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-top {
+  margin-top: 45px;
+}
+
+.sidebarNavigation .sidebar-top .links-wrapper a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.3em 0;
+}
+.sidebarNavigation .sidebar-bottom ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.link-title {
+  font-weight: bold;
+}
+li.link-item {
+  margin-bottom: 1em;
+}
+
+li.link-item a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all ease-in 0.5s;
+}
+li.link-item a:hover {
+  color: var(--blue);
+}
+
+.link-social {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.link-social span {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
+
+.link-social span:hover {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.menu-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey);
+}

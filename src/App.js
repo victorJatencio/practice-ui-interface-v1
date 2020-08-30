@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+// Components
+import Header from "./components/header/header";
+import SideBarNav from "./components/nav/sideBarNav";
+import LayoutComponent from "./components/layout/layoutContainer";
 
+// Pages
+import Intro from "./pages/Intro";
+import Agenda from "./pages/agenda";
+// Global CSS
 import "normalize.css";
 import "./css/main.css";
 
-import LayoutComponent from "./components/layout/layoutContainer";
-import Intro from "./pages/Intro";
-
 const App = () => {
+  const [menuState, setMenuState] = useState(false);
   return (
-    <div>
+    <BrowserRouter>
       <LayoutComponent>
-        <Intro />
+        <div className="App container">
+          <Header menuState={menuState} setMenuState={setMenuState} />
+
+          <SideBarNav menuState={menuState} setMenuState={setMenuState} />
+
+          <Switch>
+            <Route exact path="/" component={Intro} />
+            <Route path="/agenda" component={Agenda} />
+          </Switch>
+        </div>
       </LayoutComponent>
-    </div>
+    </BrowserRouter>
   );
 };
 
